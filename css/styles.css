@@ -17,7 +17,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #434455;
+  color:var(--color-slate);
   background-color: var(--color-white);
 }
 
@@ -72,16 +72,15 @@ body {
   color: var(--color-slate);
 }
 .adress-link:hover {
-  color: #404bbf;
+  color:var(--color-ocean);
 }
 .adress-link:focus {
-  color: #404bbf;
+  color:var(--color-ocean);
 }
 
 /*Main*/
 
 .name-section {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -96,7 +95,6 @@ body {
   background: var(--color-navy-blue);
 }
 .main-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -124,7 +122,6 @@ body {
 /*Second section*/
 
 .name-section-tools {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -155,7 +152,7 @@ body {
   background: var(--color-cloud);
 }
 .team-item {
-  background-color: #ffffff;
+  background-color:var(--color-white);
 }
 .name-team-member {
   font-weight: 500;
@@ -217,8 +214,8 @@ body {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color:var(--color-white);
+  background-color:var(--color-ocean);
 }
 
 .portfolio-title-items {
@@ -231,6 +228,8 @@ body {
 .sphere {
   font-size: 16px;
   line-height: 1.5;
- letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
+
