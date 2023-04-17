@@ -17,17 +17,33 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  color:var(--color-slate);
+  color: var(--color-slate);
   background-color: var(--color-white);
 }
+
+/*reset start*/
 
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+/*reset end*/
 
 /*Header*/
 
@@ -72,10 +88,10 @@ body {
   color: var(--color-slate);
 }
 .adress-link:hover {
-  color:var(--color-ocean);
+  color: var(--color-ocean);
 }
 .adress-link:focus {
-  color:var(--color-ocean);
+  color: var(--color-ocean);
 }
 
 /*Main*/
@@ -93,6 +109,7 @@ body {
 
 .hero {
   background: var(--color-navy-blue);
+  width: 1440px;
 }
 .main-title {
   font-size: 56px;
@@ -152,7 +169,7 @@ body {
   background: var(--color-cloud);
 }
 .team-item {
-  background-color:var(--color-white);
+  background-color: var(--color-white);
 }
 .name-team-member {
   font-weight: 500;
@@ -214,8 +231,8 @@ body {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color:var(--color-white);
-  background-color:var(--color-ocean);
+  color: var(--color-white);
+  background-color: var(--color-ocean);
 }
 
 .portfolio-title-items {
@@ -232,4 +249,64 @@ body {
   color: var(--color-slate);
 }
 
+.conteiner {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: dashed red;
+}
 
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  outline: dashed red;
+}
+
+.navigation-conteiner {
+  display: flex;
+  width: 263px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  justify-content: space-between;
+  margin-right: 332px;
+  outline: dashed red;
+}
+.address-conteiner {
+  display: flex;
+  width: 351px;
+  justify-content: space-between;
+  outline: dashed red;
+}
+.header-logo {
+  margin-right: 74px;
+}
+
+.hero-conteiner {
+  justify-content: center;
+}
+
+.main-title {
+  display: inline-block;
+  width: 496px;
+  margin-top: 260px;
+  margin-left: 472px;
+  margin-bottom: 48px;
+  margin-right: 472px;
+}
+.order-service {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  width: 169px;
+  height: 24px;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
+.tools-conteiner{
+  display: flex;
+  jastify-content:space-between;
+  
+}
