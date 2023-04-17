@@ -9,10 +9,9 @@
     <!--Нормалізація стилів-->
 
     <link
-      href="
-    https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
-    "
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     />
 
     <!--Додаваня шрифта з Google Fonts-->
@@ -28,15 +27,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="conteiner header-conteiner">
-        <!--Logo-->
-        <a class="header-logo link" href="./index.html"
-          >Web<span class="second-color-header-logo">Studio</span></a
-        >
         <!--Navigation-->
-        <nav>
-          <ul class="list navigation-conteiner">
+        <nav class="navigation-conteiner">
+          <!--Logo-->
+          <a class="header-logo link" href="./index.html"
+            >Web<span class="second-color-header-logo">Studio</span></a
+          >
+          <ul class="list navigation-list-conteiner">
             <li>
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
@@ -78,41 +77,41 @@
       </section>
 
       <!--Tools-->
-      <section class="section-tools">
-        <div class="conteiner">
-          <h2 hidden class="name-section-tools">Tools</h2>
-          <ul class="list tools-conteiner">
-            <li>
-              <h3 class="tools-title-items">Strategy</h3>
-              <p class="tools">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li>
-              <h3 class="tools-title-items">Punctuality</h3>
-              <p class="tools">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li>
-              <h3 class="tools-title-items">Diligence</h3>
-              <p class="tools">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li>
-              <h3 class="tools-title-items">Technologies</h3>
-              <p class="tools">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div class="conteiner">
+        <section class="section-tools">
+                     <h2 hidden class="name-section-tools">Tools</h2>
+            <ul class="list tools-conteiner">
+              <li class="tools-item">
+                <h3 class="tools-title-items">Strategy</h3>
+                <p class="tools">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li class="tools-item">
+                <h3 class="tools-title-items">Punctuality</h3>
+                <p class="tools">
+                  Bring the key message to the brand's audience for the best price
+                  within the shortest possible time.
+                </p>
+              </li>
+              <li class="tools-item">
+                <h3 class="tools-title-items">Diligence</h3>
+                <p class="tools">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="tools-item">
+                <h3 class="tools-title-items">Technologies</h3>
+                <p class="tools">
+                  Design practice focused on digital experiences. We bring forth a
+                  deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+                 </section>
+      </div>
 
       <!--What are we doing-->
       <section class="our-work">
