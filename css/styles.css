@@ -37,6 +37,12 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 /*reset start*/
@@ -149,11 +155,11 @@ img {
 
 .hero {
   background: var(--color-navy-blue);
+  padding: 188px 0;
 }
 
 .hero-conteiner {
   flex-direction: column;
-  padding: 188px 0;
 }
 
 .main-title {
@@ -234,20 +240,26 @@ img {
 
 /*Third section*/
 .our-work {
-  margin-bottom: 222px;
+  padding-bottom: 120px;
 }
+
 .conteiner-our-work {
   display: flex;
   gap: 24px;
+}
+.item-work {
+  width: calc((100%-3 * 16) / 3);
 }
 
 /*Fourth section*/
 
 .team {
   background: var(--color-cloud);
+  padding: 120px 0;
 }
 .team-item {
   background-color: var(--color-white);
+  border-radius: 0px 0px 4px 4px;
 }
 .name-team-member {
   font-weight: 500;
@@ -255,7 +267,7 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--color-navy-blue);
+  margin-bottom: 8px;
 }
 
 .profession-team-memeber {
@@ -267,11 +279,9 @@ img {
 .team-conteiner {
   display: flex;
   gap: 24px;
-  outline: dashed red;
 }
 .team-wraper {
   padding: 32px 16px;
-  outline: dashed red;
 }
 
 /*Footer*/
@@ -282,6 +292,7 @@ img {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -295,6 +306,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
+  display: inline-block;
 }
 .second-color-footer-logo {
   color: var(--color-cloud);
@@ -325,12 +337,16 @@ img {
   color: var(--color-iris);
   background: var(--color-cloud);
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
 }
 
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  border: 1px solid transparent;
 }
 
 .portfolio-title-items {
@@ -345,4 +361,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+}
+
+.gallary {
+  padding: 96px 0 120px;
+}
+
+.gallary-conteiner {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
