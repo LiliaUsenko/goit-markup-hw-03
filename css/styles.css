@@ -21,6 +21,20 @@ body {
   background-color: var(--color-white);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .name-section {
   font-size: 36px;
   line-height: 1.11;
@@ -95,6 +109,7 @@ img {
 }
 
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -110,6 +125,7 @@ img {
 
 .adress {
   font-style: normal;
+  margin-left: auto;
 }
 
 .adress-link {
@@ -138,9 +154,6 @@ img {
 .navigation-list-conteiner {
   display: flex;
   gap: 40px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-right: 332px;
 }
 .address-conteiner {
   display: flex;
@@ -168,10 +181,10 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
-  display: inline-block;
   justify-content: center;
   max-width: 496px;
-  margin-left: 312px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order-service {
@@ -191,8 +204,9 @@ img {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
-  margin-left: 500px;
-  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
 }
 
 .order-service:hover,
@@ -227,7 +241,7 @@ img {
 }
 
 .tools-item {
-  width: calc((100%-3 * 24) / 4);
+  width: calc((100%-3 * 24px) / 4);
 }
 .tools-title-items {
   font-weight: 500;
@@ -249,7 +263,7 @@ img {
   gap: 24px;
 }
 .item-work {
-  width: calc((100%-3 * 16) / 3);
+  width: calc((100%-3 * 16px) / 3);
 }
 
 /*Fourth section*/
@@ -266,6 +280,7 @@ img {
 .team-item {
   background-color: var(--color-white);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100%-3 * 24px) / 4);
 }
 
 .team-wraper {
@@ -301,7 +316,6 @@ img {
 
 .footer-conteiner {
   justify-content: flex-start;
-  padding: 100px 0;
 }
 
 .footer-logo {
@@ -326,7 +340,7 @@ img {
 
 .footer-text {
   width: 264px;
-  padding-bottom: 100px;
+  line-height: 24px;
 }
 
 /*Portfolio page*/
@@ -381,7 +395,6 @@ img {
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-title-items {
